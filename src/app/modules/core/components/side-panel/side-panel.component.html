@@ -1,0 +1,13 @@
+<div [@slideInOut]="shown ? 'in' : 'out'" class="select-side-menu {{panelStyle}}">
+  <i class="far fa-times-circle close-button" (click)="hideMenu()"></i>
+  <div class="row">
+    <div class="col-12 panel-title">
+      {{title}}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <ng-template appPanelComponent></ng-template>
+    </div>
+  </div>
+</div>

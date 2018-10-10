@@ -1,0 +1,29 @@
+@import './../../../../../themes/core-theme';
+
+.notification {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 12px;
+
+  &.success {
+    background-color: green;
+    color: white;
+    border-bottom: 3px solid darken(green, 10%);
+  }
+
+  &.error {
+    background-color: $red;
+    color: white;
+    border-bottom: 3px solid darken($red, 10%);
+  }
+
+  &.info {
+    background-color: #2e59bc;
+    color: white;
+    border-bottom: 3px solid darken(blue, 10%);
+  }
+}

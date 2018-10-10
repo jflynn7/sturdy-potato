@@ -1,0 +1,51 @@
+/**
+ * Core theme variables - Alternative theming can over-ride these variables
+ */
+
+/**
+ * Core Colours
+ */
+$red: #293582;
+
+/**
+ * Background Colors
+ */
+$body-background: #E9ECF2 !default;
+$card-background: #FFFFFF !default;
+
+/**
+ * Typography
+ */
+$main-font: 'Open Sans', sans-serif !default;
+
+/**
+ * Toggles
+ */
+$toggle-border: #F7F7F7;
+$toggle-selected-bg: $red;
+
+/**
+ * Colors
+ */
+$main-font-color: #4A4A4A !default;
+$secondary-font-color: #616161 !default;
+$highlight-font-color: $red !default;
+
+/**
+ * Buttons
+ */
+$button-border-radius: 30px !default;
+
+$button-bg-solid: $red;
+$button-border-solid: 3px solid transparent;
+$button-fg-solid: white;
+
+$button-bg-outline: white;
+$button-border-outline: 3px solid $red;
+$button-fg-outline: $red;
+
+/**
+ * Layout
+ */
+$default-padding: 15px !default;
+$default-margin: 15px !default;

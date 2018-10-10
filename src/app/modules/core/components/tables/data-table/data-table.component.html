@@ -1,0 +1,21 @@
+<div class="table-responsive fixed-height">
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col" *ngFor="let header of config.headers">{{header.label}}</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr
+      *ngFor="let dataItem of data; let i = index;"
+      [ngClass]="{ 'focussed' : config.rowLiftOverrides && i < config.rowLiftOverrides.length }">
+      <td
+        *ngFor="let header of config.headers; let i = index;"
+        [ngClass]="dataItem[config.levelSeparatorKey] && config.groupedByLevel ? {
+          'group-header' : dataItem[config.levelSeparatorKey] === 1 && i === 0,
+          'group-item' : dataItem[config.levelSeparatorKey] > 1 && i === 0
+        } : ''">{{getFormattedOutput(dataItem[header.dataKey], header.dataType, header.prefix)}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>

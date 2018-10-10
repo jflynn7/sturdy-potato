@@ -1,0 +1,37 @@
+@import './../../../../../../../themes/core-theme';
+
+.toggle-group {
+
+  .toggle {
+    display: inline-block;
+    padding: 5px $default-padding;
+    border-top: 1px solid $toggle-border;
+    border-bottom: 1px solid $toggle-border;
+    font-size: 12px;
+    background-color: white;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $toggle-border;
+    }
+
+    &.first {
+      border-radius: $button-border-radius 0 0 $button-border-radius;
+      border-left: 1px solid $toggle-border;
+    }
+
+    &.middle {
+      border-radius: 0;
+    }
+
+    &.last {
+      border-radius: 0 $button-border-radius $button-border-radius 0;
+      border-right: 1px solid $toggle-border;
+    }
+
+    &.selected {
+      background-color: $toggle-selected-bg;
+      color: white;
+    }
+  }
+}

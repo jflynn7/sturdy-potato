@@ -1,0 +1,18 @@
+<app-card title="Testing Stuff">
+  <div class="row">
+    <div class="col-3">
+      <app-element-base
+        [formGroup]="testForm"
+        [element]="testFormElements.get('test-two')">
+      </app-element-base>
+    </div>
+  </div>
+</app-card>
+
+<app-card title="Testing Forms">
+  <app-form [formDefinition]="testFormElements"></app-form>
+</app-card>
+
+<app-card title="Tableau Embed Test">
+  <app-tableau-visualisation [vizUrl]="testViz"></app-tableau-visualisation>
+</app-card>

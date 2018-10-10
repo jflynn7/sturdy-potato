@@ -1,0 +1,8 @@
+<div class="toggle-group">
+  <span class="toggle"
+    *ngFor="let toggle of toggleOptions; let i = index;"
+    (click)="handleClick(toggleGroupId, toggle.id, toggle.action, toggle.fn)"
+    [ngClass]="getClazz(i, toggle.id, toggleOptions)">
+    {{toggle.label}}
+  </span>
+</div>

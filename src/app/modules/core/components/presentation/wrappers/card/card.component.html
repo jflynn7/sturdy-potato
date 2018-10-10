@@ -1,0 +1,20 @@
+<div class="full-width-card container-fluid">
+  <div class="row">
+    <div [ngClass]="actions ? 'col-4' : 'col-12'">
+      <h2 class="card-title-light">{{title}}</h2>
+    </div>
+    <div *ngIf="actions" class="col-8 card-actions">
+     <app-iconic-button
+       *ngFor="let action of actions;
+       let i = index;"
+       [options]="action"
+      >
+     </app-iconic-button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <ng-content></ng-content>
+    </div>
+  </div>
+</div>

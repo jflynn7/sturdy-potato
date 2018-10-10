@@ -1,0 +1,43 @@
+@import "./../../../../../../../themes/core-theme";
+
+.iconic-button {
+  background-color: $button-bg-solid;
+  color: $button-fg-solid;
+  padding: 8px $default-padding;
+  border-radius: $button-border-radius;
+  margin-bottom: $default-margin;
+  text-align: left;
+  font-size: 15px;
+  border: $button-border-solid;
+
+  &.small {
+    display: inline-block;
+    padding: 5px $default-padding;
+    font-size: 12px;
+    width: inherit;
+    border-width: 1px !important;
+
+    i {
+      margin-right: 5px;
+    }
+  }
+
+  &.outline {
+    background-color: $button-bg-outline;
+    color: $button-fg-outline;
+    border: $button-border-outline;
+
+    &:hover {
+      background-color: darken($button-bg-outline, 5%);
+    }
+  }
+
+  i {
+    margin-right: 15px;
+  }
+
+  &:hover {
+    background-color: darken($button-bg-solid, 5%);
+  }
+
+}

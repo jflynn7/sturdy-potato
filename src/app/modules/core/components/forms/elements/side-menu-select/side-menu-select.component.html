@@ -1,0 +1,22 @@
+<label class="select-label-text" [for]="element.inputId">{{element.label}}</label>
+<div class="input-group" [formGroup]="formGroup">
+
+  <input
+    [formControlName]="element.inputId"
+    type="text"
+    readonly
+    class="custom-select options curve-left"
+    [id]="element.inputId"
+    (click)="openMenu(element.optionPanel)"
+  />
+
+  <div class="input-group-append curve-right">
+    <label
+      class="input-group-text select-label"
+      [for]="element.inputId"
+      [ngClass]="{ 'active' : active }">
+        <i *ngIf="!active" class="fas fa-align-right"></i>
+        <i *ngIf="active" class="fas fa-times"></i>
+    </label>
+  </div>
+</div>

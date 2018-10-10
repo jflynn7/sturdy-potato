@@ -1,0 +1,18 @@
+<div class="tabs">
+  <span class="tabChunk" *ngFor="let chunk of chunked">
+    <span
+      class="tab"
+      *ngFor="let tab of chunk; let i = index;"
+      (click)="getTableByTabKey(tab, tabbedData)"
+      [ngClass]="{
+      'selected' : activeTab === tab,
+      'first' : isFirstTab(i),
+      'last': isLastTab(i, chunk)
+    }">{{tab}}</span>
+  </span>
+</div>
+
+<app-data-table
+  [data]="activeTable"
+  [config]="config">
+</app-data-table>

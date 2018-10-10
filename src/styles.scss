@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+@import "themes/core-theme";
+
+body {
+  position: relative;
+  font-family: $main-font;
+  background-color: $body-background;
+  overflow-x:hidden;
+}
+
+.text-light {
+  font-weight: 300;
+  color: $secondary-font-color;
+}
+
+.text-heavy {
+  font-weight: 600;
+  color: $main-font-color;
+}

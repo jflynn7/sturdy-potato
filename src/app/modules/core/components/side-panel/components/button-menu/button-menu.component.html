@@ -1,0 +1,10 @@
+<div class="iconic-menu">
+  <div class="row" *ngFor="let option of data.options">
+    <div class="col-12">
+      <app-iconic-button
+        [options]="option"
+        (click)="handleClick(option)">
+      </app-iconic-button>
+    </div>
+  </div>
+</div>

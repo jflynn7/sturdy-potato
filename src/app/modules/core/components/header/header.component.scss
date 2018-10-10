@@ -1,0 +1,14 @@
+@import "./../../../../../themes/core-theme";
+
+.navigation {
+  padding: $default-padding;
+}
+
+.header {
+  background-color: white;
+  padding: $default-padding * 2;
+  .logo {
+    max-width: 200px;
+  }
+
+}

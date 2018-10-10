@@ -1,0 +1,6 @@
+<app-card [title]="'Direct Costs Summary'">
+  <app-tabbed-data-table
+    [data]="directCostsTable.data$ | async"
+    [config]="directCostsTable">
+  </app-tabbed-data-table>
+</app-card>

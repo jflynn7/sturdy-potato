@@ -1,0 +1,19 @@
+@import './../../../../../../../themes/core-theme';
+
+.full-width-card {
+  background-color: white;
+  padding: $default-padding * 2;
+  margin-bottom: $default-margin;
+
+  .card-title-light {
+    color: $highlight-font-color;
+    font-weight: 300;
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .card-actions {
+    float: right;
+    text-align: right;
+  }
+}

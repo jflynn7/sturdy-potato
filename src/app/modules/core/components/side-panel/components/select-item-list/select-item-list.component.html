@@ -1,0 +1,5 @@
+<div class="row" *ngFor="let option of data">
+  <div class="col-12" (click)="option.selectable ? selectOption(option) : undefined">
+    <span class="option" [ngClass]="{ 'title' : option.isTitle }">{{option.label}}</span>
+  </div>
+</div>

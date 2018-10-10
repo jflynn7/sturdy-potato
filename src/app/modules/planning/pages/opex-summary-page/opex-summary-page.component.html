@@ -1,0 +1,6 @@
+<app-card [title]="'Opex Summary'">
+  <app-tabbed-data-table
+    [data]="opexSummaryTable.data$ | async"
+    [config]="opexSummaryTable">
+  </app-tabbed-data-table>
+</app-card>

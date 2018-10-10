@@ -1,0 +1,6 @@
+<app-card [title]="'Recharges Summary'">
+  <app-tabbed-data-table
+    [data]="rechargesSummaryTable.data$ | async"
+    [config]="rechargesSummaryTable">
+  </app-tabbed-data-table>
+</app-card>

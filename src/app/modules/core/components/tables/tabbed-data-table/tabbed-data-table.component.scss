@@ -1,0 +1,42 @@
+@import "./../../../../../../themes/core-theme";
+
+.tab {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: $default-margin;
+
+  &.first {
+    border-radius: $button-border-radius 0 0 $button-border-radius;
+  }
+
+  &.last {
+    border-radius: 0 $button-border-radius $button-border-radius 0;
+  }
+
+  &:hover {
+    background-color: darken(#f9f9f9, 5%);
+    cursor: pointer;
+  }
+
+  &.selected {
+    background-color: $red;
+    color: white;
+  }
+}
+
+.tabChunk {
+  display: block;
+}
+
+
+@media only screen and (max-width : 970px) {
+  .tab {
+    font-size: 10px;
+    padding: 5px 10px;
+    min-width: 50px
+  }
+}

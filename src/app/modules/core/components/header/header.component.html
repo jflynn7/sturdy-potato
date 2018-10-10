@@ -1,0 +1,35 @@
+<div class="container-fluid header">
+  <div class="row">
+    <div class="col-4">
+      LOGO
+    </div>
+    <div class="col-8 text-right">
+      <div class="row">
+        <div class="col-xs-6 col-md-10">
+          <div class="d-none d-sm-block d-md-block d-lg-block">
+            <app-toggle-group
+              [toggleGroupId]="'header-dashboard-choice'"
+              [toggleOptions]="dashboardSelectToggles"
+              [defaultSelection]="dashboardSelectToggles[0].id">
+            </app-toggle-group>
+          </div>
+        </div>
+        <div class="col-xs-6 col-md-2">
+          <app-iconic-button
+            [options]="logout"
+            (click)="handleClick(logout)"></app-iconic-button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <nav class="navigation">
+    <app-horizontal-button-menu
+      [navOptions]="getNavOptions()"
+      menuId="planning-dashboard"
+      [selected]="getCurrentPage()">
+    </app-horizontal-button-menu>
+  </nav>
+</div>

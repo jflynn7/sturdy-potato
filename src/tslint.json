@@ -12,6 +12,11 @@
             "element",
             "app",
             "kebab-case"
+        ],
+        "semicolon": [
+          true,
+          "always",
+          "ignore-bound-class-methods"
         ]
     }
 }

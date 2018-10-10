@@ -16,6 +16,20 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "CREMIComponents": [
+        "dist/cremicomponents"
+      ],
+      "CREMIComponents/*": [
+        "dist/cremicomponents/*"
+      ],
+      "CremiComponents": [
+        "dist/cremi-components"
+      ],
+      "CremiComponents/*": [
+        "dist/cremi-components/*"
+      ]
+    }
   }
 }

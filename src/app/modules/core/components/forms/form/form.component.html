@@ -1,0 +1,7 @@
+<div class="form">
+  <app-element-base
+    *ngFor="let element of formDefinition.elements"
+    [element]="element"
+    [formGroup]="formGroup">
+  </app-element-base>
+</div>

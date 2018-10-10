@@ -1,0 +1,15 @@
+<div class="horizontal-menu">
+  <div class="menu-button"
+        *ngFor="let option of navOptions; let i = index;"
+        (click)="handleClick(menuId, option.id, option.action, option.fn)"
+        [ngClass]="getClazz(i, option.id, navOptions, activeToggle)">
+        {{option.label}}</div>
+</div>
+
+<div class="drop-down-menu">
+  <div class="menu-button"
+       *ngFor="let option of navOptions; let i = index;"
+       (click)="handleClick(menuId, option.id, option.action, option.fn, option)"
+       [ngClass]="getClazz(i, option.id, navOptions, activeToggle)">
+    {{option.label}} <i *ngIf="option.id === activeToggle" class="caret fas fa-caret-down" (click)="toggleMobileMenu()"></i></div>
+</div>

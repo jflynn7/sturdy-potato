@@ -1,0 +1,8 @@
+<div [ngSwitch]="element.type">
+  <app-text-input *ngSwitchCase="'text'" [formGroup]="formGroup" [element]="element"></app-text-input>
+  <app-select
+    *ngSwitchCase="'select'"
+    [formGroup]="formGroup"
+    [element]="element"
+    [formId]="formId"></app-select>
+</div>

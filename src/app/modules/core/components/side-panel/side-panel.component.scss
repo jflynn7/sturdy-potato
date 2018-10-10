@@ -1,0 +1,36 @@
+.select-side-menu {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: #2f3e48;
+  height: 100vh;
+  z-index: 3;
+  color: white;
+  padding: 30px;
+
+  &.primary {
+    width: 400px;
+  }
+
+  &.secondary {
+    width: 390px;
+    background-color: #1f282f;
+  }
+
+  .close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: white;
+    font-size: 18px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .panel-title {
+    padding-bottom: 15px;
+  }
+}
